@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Test App</title>
+</head>
+<body>
+<h2>Weather Dasboard</h2>
+<form action="{{ url_for('render_results') }}" method="post">
+    Postal Code: <input type="text" name="zipCode"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
