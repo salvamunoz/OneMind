@@ -15,7 +15,6 @@ class FlaskTest(unittest.TestCase):
         # comprobar que devuelve datos
         tester = app.test_client(self)
         response = tester.get("/")
-        print(b'Postal')
         self.assertTrue(b'Postal' in response.data)
 
     def test_get_weather(self):
